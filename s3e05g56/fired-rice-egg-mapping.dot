@@ -1,0 +1,120 @@
+digraph map4fired2rice {
+    /*生成命令:
+$ dot -Tpng fired-rice-egg-mapping.dot -o fired-rice-egg-mapping.png
+ -Tcmapx -o path2pythoneer.map
+    全局设定
+    */
+    graph [label="蛋炒饭 烹制 {不完全流程图 v17.2.7.3}"
+        ,fontsize=14.0,fontcolor=snow
+        ,fontname="Noto Sans S Chinese Medium"
+        ,labeljust="l",labelloc="t",center=1
+        ,ranksep=0.4,ratio=compress
+        ,rankdir=TB
+        ,bgcolor="#333333"
+        ];
+    //,style="filled,setlinewidth(0.5)",fillcolor="#333333"    
+
+    node[fontsize=11.0,height=0.3
+        ,fontname="Noto Sans S Chinese DemiLight"
+        ,style="setlinewidth(0.5)"
+        ,color=gray,fontcolor=snow
+        ,shape=plaintext
+        ];
+
+    edge [fontsize=9.0,fontcolor=gray
+        ,fontname="Noto Sans S Chinese Light"
+        ,color=azure
+        ,arrowsize=0.8,arrowhead=vee,arrowtail=none
+        ,style="setlinewidth(0.5)"
+        ];
+/*
+    src [label="源码",shape=ellipse,style="filled,dashed,setlinewidth(5)"
+        ,color="#333333",fillcolor=dimgray
+        ,URL="http://code.google.com/p/zoomquiet/source/browse/dot/obp/csdndr1-km.dot?repo=tangle"];
+{l_mid l_dev l_hack}->pythonic [style="dotted,setlinewidth(1)"];
+
+    root->l_mid->l_dev->l_hack[color=green,style="setlinewidth(4)"];
+
+*/
+    
+
+    st0 [label="备料",shape=tab,
+            style="filled",fillcolor=snow,fontcolor="#333333"];
+        
+        mRice [label="煮饭"];
+        oRice [label="剩饭"];
+        cCong [label="切葱"];
+        mEgg [label="打蛋"] ;
+
+    st0->{cCong oRice mEgg} [style="dotted,setlinewidth(1)"]; 
+    st0->mRice [color=green, style="setlinewidth(3)"]; 
+
+
+    st1 [label="炒制",shape=tab,
+            style="filled",fillcolor=snow,fontcolor="#333333"];
+
+        hGuo [label="热锅"];
+        aSlat [label="下盐"];
+        aOil [label="润油"];
+        fCong [label="炒葱"];
+        aRice [label="给饭"];
+        aFired [label="翻炒"];
+        aEgg [label="送蛋"];
+        fAll [label="共炒"];
+
+    st1->hGuo->aSlat->aOil->fCong [color=green, style="setlinewidth(3)"]; 
+
+
+        fCong->aRice->aFired [color=yellow, style="setlinewidth(1)"]; 
+        aFired->aEgg [label="现打", color=yellow, style="setlinewidth(1)"];
+        aEgg->fAll [color=yellow, style="setlinewidth(1)"];
+
+        fCong->aEgg->aFired->aRice->fAll;
+        mEgg->aEgg [style="dotted,setlinewidth(1)"]; 
+
+
+    st2 [label="出锅",shape=tab,
+            style="filled",fillcolor=snow,fontcolor="#333333"];
+
+        aCong [label="追葱"];
+        aOthers [label="其它..."];
+
+    fAll->st2 [color=green, style="setlinewidth(3)"]; 
+        st2->aCong [style="setlinewidth(2)"]; 
+        aCong->aOthers [style="dotted,setlinewidth(1)"]; 
+
+    st0->st1 [style="setlinewidth(3)"]; 
+
+    /*
+    root->want->greateam [style="setlinewidth(4)"];
+        greateam->aka->grown [style="setlinewidth(3)"];
+
+    grown->{hr goal} ;
+    grown->km->wiki [style="setlinewidth(2)"];
+        km->{KmFormula kmeg} ;
+
+        wiki->acteam->soul [style="setlinewidth(1)"];
+            soul->EK;
+        wiki->{what cando spread};
+            spread->game [style="setlinewidth(1)"];
+            spread->{analyse EK};
+    analyse->rooterms;
+
+    {rooterms game aka}->Kaopulity [style="setlinewidth(2)"];
+
+    {hr goal km what acteam EK}->etc [style="dotted"];
+
+
+    nodeA->nodeB [label="日常",color=azure,style="setlinewidth(1)"];
+    nodeA->nodeB [label="活跃",color=azure,style="setlinewidth(2)"];
+    nodeA->nodeB [label="兴奋",color=azure,style="setlinewidth(3)"];
+    lotsMon->existProg;
+        tonesOptions->existProg;
+    etc->l_hack;
+    
+    */
+
+
+    edge [style=invis];
+
+}

@@ -7,8 +7,8 @@ $ dot -Tpng fired-rice-egg-mapping.dot -o fired-rice-egg-mapping.png
     graph [label="蛋炒饭 烹制 {不完全流程图 v17.2.7.3}"
         ,fontsize=14.0,fontcolor=snow
         ,fontname="Noto Sans S Chinese Medium"
-        ,labeljust="l",labelloc="b",center=1
-        ,ranksep=0.4,ratio=compress
+        ,labeljust="l",labelloc="t",center=1
+        ,ranksep=0.2,ratio=compress
         ,rankdir=TB
         ,bgcolor="#333333"
         ];
@@ -75,14 +75,22 @@ $ dot -Tpng fired-rice-egg-mapping.dot -o fired-rice-egg-mapping.png
             style="filled",fillcolor=snow,fontcolor="#333333"];
 
 
-            O0 [label="大油"];
-            O1 [label="豆油"];
-            O2 [label="鸡油"];
-            O3 [label="橄榄油"];
-            O4 [label="茶子油"];
-            O5 [label="调和油"];
-            On [label="...etc.\n非有香"];
+            H0 [label="煤气"];
+            H1 [label="电磁"];
+            H2 [label="喷灯"];
+            H3 [label="土灶"];
+            H4 [label="煤炉"];
+            Hn [label="...etc.\n热源"];
+        {H0 H1 H2 H3 H4 Hn}->hGuo ;
         hGuo [label="热锅"];
+            S0 [label="精盐"];
+            S1 [label="原盐"];
+            S2 [label="海盐"];
+            S3 [label="低钠盐"];
+            S4 [label="雪花盐"];
+            S5 [label="自然晶盐"];
+            Sn [label="...etc.\n特种盐"];
+        {S0 S1 S2 S3 S4 S5 Sn}->aSlat;
         aSlat [label="下盐"];
             O0 [label="大油"];
             O1 [label="豆油"];
@@ -90,35 +98,90 @@ $ dot -Tpng fired-rice-egg-mapping.dot -o fired-rice-egg-mapping.png
             O3 [label="橄榄油"];
             O4 [label="茶子油"];
             O5 [label="调和油"];
-            On [label="...etc.\n非有香"];
+            On [label="...etc.\n非类香油"];
         {O0 O1 O2 O3 O4 O5 On}->aOil;
         aOil [label="润油"];
-        fCong [label="炒葱"];
+        fCong [label="炒香"];
         aRice [label="给饭"];
         aFired [label="翻炒"];
+
         aEgg [label="送蛋"];
+            fE0 [label="微凝"];
+                fER0 [label="金包银",shape=note];
+            fE1 [label="稍凝"];
+                fER1 [label="半金包银",shape=note];
+            fE2 [label="半凝"];
+                fER2 [label="碎金饭",shape=note];
+            fE3 [label="全凝"];
+                fER3 [label="荷包饭",shape=note];
+                fER4 [label="蛋包饭",shape=note];
+            fEn [label="...\n更微妙的"];
+        aEgg->{fE0 fE2 fE3 fEn};
+            fE0->fER0 [style="dotted"];
+            fE1->fER1 [style="dotted"];
+            fE2->fER2 [style="dotted"];
+            fE3->{fER3 fER4} [style="dotted"];
+
         fAll [label="共炒"];
+            A0 [label="加肉丁"];
+                A00 [label="SPAM"];
+                A01 [label="腊肠"];
+                A02 [label="辣肠"];
+                A03 [label="干肠"];
+                A0n [label="...etc."];
+                {A00 A01 A02 A03 A0n}->A0;
+            A1 [label="加酱"];
+                A10 [label="辣酱"];
+                A11 [label="沙茶"];
+                A12 [label="海鲜"];
+                A13 [label="甜面"];
+                A1n [label="...etc."];
+                {A10 A11 A12 A13 A1n}->A1;
+            A2 [label="加色"];
+                A20 [label="生抽"];
+                A21 [label="蚝油"];
+                A2n [label="...etc."];
+                {A20 A21 A2n}->A2;
+            An [label="... etc."];
+        fAll->{A0 A1 A2 An};
+
 
     st1->hGuo->aSlat->aOil->fCong [color=green, style="setlinewidth(3)"]; 
 
 
         fCong->aRice->aFired [color=yellow, style="setlinewidth(1)"]; 
         aFired->aEgg [label="现打", color=yellow, style="setlinewidth(1)"];
-        aEgg->fAll [color=yellow, style="setlinewidth(1)"];
 
-        fCong->aEgg->aFired->aRice->fAll;
+        {fE0 fE2 fE3 fEn}->fAll [color=yellow, style="setlinewidth(1)"];
+
+        fCong->{fE0 fE2 fE3 fEn}->aFired->aRice->fAll [color=red
+                                            , style="setlinewidth(1.5)"];
         mEgg->aEgg [style="dotted,setlinewidth(1)"]; 
 
 
     st2 [label="出锅",shape=tab,
             style="filled",fillcolor=snow,fontcolor="#333333"];
 
+        pXiang [label="追香"];
+            pA0 [label="葱碎"];
+            pA1 [label="胡菽"];
+            pA7 [label="7味粉"];
+            pA13 [label="13香"];
+            pAn [label="...etc.\n香粉"];
+            pXiang->{pA0 pA1 pA7 pA13 pAn};
         aCong [label="追葱"];
+        aCai [label="小菜"];
+            AC0 [label="榨菜"];
+            AC1 [label="泡菜"];
+            AC2 [label="辣白菜"];
+            AC3 [label="大头菜"];
+            ACn [label="... etc./脆鲜辣"];
+            aCai->{AC0 AC1 AC2 AC3 ACn};
         aOthers [label="其它..."];
 
-    fAll->st2 [color=green, style="setlinewidth(3)"]; 
-        st2->aCong [style="setlinewidth(2)"]; 
-        aCong->aOthers [style="dotted,setlinewidth(1)"]; 
+    {A0 A1 A2 An}->st2 [color=green, style="setlinewidth(3)"]; 
+        st2->{pXiang aCai} [style="setlinewidth(2)"]; 
+        {pXiang aCai}->aOthers [style="dotted,setlinewidth(1)"]; 
 
 
     /*

@@ -7,7 +7,7 @@ $ dot -Tpng fired-rice-egg-mapping.dot -o fired-rice-egg-mapping.png
     graph [label="蛋炒饭 烹制 {不完全流程图 v17.2.7.3}"
         ,fontsize=14.0,fontcolor=snow
         ,fontname="Noto Sans S Chinese Medium"
-        ,labeljust="l",labelloc="t",center=1
+        ,labeljust="l",labelloc="b",center=1
         ,ranksep=0.4,ratio=compress
         ,rankdir=TB
         ,bgcolor="#333333"
@@ -35,26 +35,63 @@ $ dot -Tpng fired-rice-egg-mapping.dot -o fired-rice-egg-mapping.png
 
     root->l_mid->l_dev->l_hack[color=green,style="setlinewidth(4)"];
 
+    st0 [label="备料",shape=tab,
+            style="filled",fillcolor=snow,fontcolor="#333333"];
+
+        mRice [label="煮饭"];
 */
     
 
-    st0 [label="备料",shape=tab,
+        R0 [label="粳米"];
+        R1 [label="籼米"];
+        R2 [label="糙米"];
+        R3 [label="香米"];
+        Rn [label="...非糥"];
+    {R0 R1 R2 R3 Rn}->mRice;
+    mRice [label="煮饭",shape=tab,
             style="filled",fillcolor=snow,fontcolor="#333333"];
         
-        mRice [label="煮饭"];
-        oRice [label="剩饭"];
+        oRice [label="隔夜饭"];
         cCong [label="切葱"];
+            C0 [label="小葱"];
+            C1 [label="大葱"];
+            C2 [label="胡葱"];
+            C3 [label="洋葱"];
+            Cn [label="...etc.\n香青"];
+        {C0 C1 C2 C3 Cn}->cCong;
+
+            E0 [label="柴鸡蛋"] ;
+            E1 [label="鸡蛋"] ;
+            E2 [label="鸭蛋"] ;
+            E3 [label="鹅蛋"] ;
+            En [label="...etc.\n好蛋"] ;
+        {E0 E1 E2 E3 En}->mEgg;
         mEgg [label="打蛋"] ;
 
-    st0->{cCong oRice mEgg} [style="dotted,setlinewidth(1)"]; 
-    st0->mRice [color=green, style="setlinewidth(3)"]; 
-
+    {cCong mEgg}->st1 [style="dotted,setlinewidth(1)"]; 
+    mRice->oRice->st1 [color=green, style="setlinewidth(3)"]; 
 
     st1 [label="炒制",shape=tab,
             style="filled",fillcolor=snow,fontcolor="#333333"];
 
+
+            O0 [label="大油"];
+            O1 [label="豆油"];
+            O2 [label="鸡油"];
+            O3 [label="橄榄油"];
+            O4 [label="茶子油"];
+            O5 [label="调和油"];
+            On [label="...etc.\n非有香"];
         hGuo [label="热锅"];
         aSlat [label="下盐"];
+            O0 [label="大油"];
+            O1 [label="豆油"];
+            O2 [label="鸡油"];
+            O3 [label="橄榄油"];
+            O4 [label="茶子油"];
+            O5 [label="调和油"];
+            On [label="...etc.\n非有香"];
+        {O0 O1 O2 O3 O4 O5 On}->aOil;
         aOil [label="润油"];
         fCong [label="炒葱"];
         aRice [label="给饭"];
@@ -83,9 +120,9 @@ $ dot -Tpng fired-rice-egg-mapping.dot -o fired-rice-egg-mapping.png
         st2->aCong [style="setlinewidth(2)"]; 
         aCong->aOthers [style="dotted,setlinewidth(1)"]; 
 
-    st0->st1 [style="setlinewidth(3)"]; 
 
     /*
+    st0->st1 [style="setlinewidth(3)"]; 
     root->want->greateam [style="setlinewidth(4)"];
         greateam->aka->grown [style="setlinewidth(3)"];
 

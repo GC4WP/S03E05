@@ -9,7 +9,7 @@ $ dot -Tpng fired-rice-egg-mapping.dot -o fired-rice-egg-mapping.png
         ,fontname="Noto Sans S Chinese Medium"
         ,labeljust="l",labelloc="t",center=1
         ,ranksep=0.2,ratio=compress
-        ,rankdir=TB
+        ,rankdir=LR
         ,bgcolor="#333333"
         ];
     //,style="filled,setlinewidth(0.5)",fillcolor="#333333"    
@@ -116,7 +116,7 @@ $ dot -Tpng fired-rice-egg-mapping.dot -o fired-rice-egg-mapping.png
                 fER3 [label="荷包饭",shape=note];
                 fER4 [label="蛋包饭",shape=note];
             fEn [label="...\n更微妙的"];
-        aEgg->{fE0 fE2 fE3 fEn};
+        aEgg->{fE0 fE1 fE2 fE3 fEn};
             fE0->fER0 [style="dotted"];
             fE1->fER1 [style="dotted"];
             fE2->fER2 [style="dotted"];
@@ -169,7 +169,6 @@ $ dot -Tpng fired-rice-egg-mapping.dot -o fired-rice-egg-mapping.png
             pA13 [label="13香"];
             pAn [label="...etc.\n香粉"];
             pXiang->{pA0 pA1 pA7 pA13 pAn};
-        aCong [label="追葱"];
         aCai [label="小菜"];
             AC0 [label="榨菜"];
             AC1 [label="泡菜"];

@@ -55,7 +55,7 @@ John Gruber 在 2004 年創造了 Markdown 語言，在語法上有很大一部�
 
 *点击预览可以看到效果：*
 
-![在这里输入图片描述](#)(https://dn-coding-net-production-pp.qbox.me/d46c3a8f-b74a-4008-ad1d-a56be443d5fa.png)
+![在这里输入图片描述](https://dn-coding-net-production-pp.qbox.me/d46c3a8f-b74a-4008-ad1d-a56be443d5fa.png)
 
 #### 锚点
 
@@ -79,7 +79,7 @@ Markdown 标记区块引用是使用类似 email 中用 \> 的引用方式，只
 
 *效果图如下：*
 
-![在这里输入图片描述](#)(https://dn-coding-net-production-pp.qbox.me/d735ad0c-2113-48dd-ae5d-2d3b3fca6977.png)
+![在这里输入图片描述](https://dn-coding-net-production-pp.qbox.me/d735ad0c-2113-48dd-ae5d-2d3b3fca6977.png)
 
 区块引用可以嵌套，只要根据层次加上不同数量的 \> ：
 
@@ -95,7 +95,7 @@ Markdown 标记区块引用是使用类似 email 中用 \> 的引用方式，只
 
 *效果图如下：*
 
-![在这里输入图片描述](#)(https://dn-coding-net-production-pp.qbox.me/db2ce6d5-5dc9-4c92-b226-50174d853eb9.png)
+![在这里输入图片描述](https://dn-coding-net-production-pp.qbox.me/db2ce6d5-5dc9-4c92-b226-50174d853eb9.png)
 
 引用的区块内也可以使用其他的 Markdown 语法，包括标题、列表、代码区块等：
 
@@ -117,7 +117,7 @@ Markdown 标记区块引用是使用类似 email 中用 \> 的引用方式，只
 
 *效果图如下：*
 
-![在这里输入图片描述](#)(https://dn-coding-net-production-pp.qbox.me/58bc73bd-f1ba-4cc1-9d90-24758e099de7.png)
+![在这里输入图片描述](https://dn-coding-net-production-pp.qbox.me/58bc73bd-f1ba-4cc1-9d90-24758e099de7.png)
 
 ### 列表
 
@@ -131,7 +131,7 @@ Markdown 标记区块引用是使用类似 email 中用 \> 的引用方式，只
 
 *效果图如下：*
 
-![在这里输入图片描述](#)(https://dn-coding-net-production-pp.qbox.me/d5772b14-8976-4e9f-945b-4b06d2a6e8f1.png)
+![在这里输入图片描述](https://dn-coding-net-production-pp.qbox.me/d5772b14-8976-4e9f-945b-4b06d2a6e8f1.png)
 
 **有序列表**：使用数字接着一个英文句点
 
@@ -141,7 +141,7 @@ Markdown 标记区块引用是使用类似 email 中用 \> 的引用方式，只
 
 *效果图如下：*
 
-![在这里输入图片描述](#)(https://dn-coding-net-production-pp.qbox.me/d0321f44-c344-43d4-817e-9040735cf5b3.png)
+![在这里输入图片描述](https://dn-coding-net-production-pp.qbox.me/d0321f44-c344-43d4-817e-9040735cf5b3.png)
 
 如果要在列表项目内放进引用，那 \> 就需要缩进：
 
@@ -157,7 +157,7 @@ Markdown 标记区块引用是使用类似 email 中用 \> 的引用方式，只
 
 *效果图如下：*
 
-![在这里输入图片描述](#)(https://dn-coding-net-production-pp.qbox.me/21bfcf00-3a71-4b90-9f6e-e692dd3100a2.png)
+![在这里输入图片描述](https://dn-coding-net-production-pp.qbox.me/21bfcf00-3a71-4b90-9f6e-e692dd3100a2.png)
 
 代办列表: 表示列表是否勾选状态
 
@@ -167,7 +167,7 @@ Markdown 标记区块引用是使用类似 email 中用 \> 的引用方式，只
 
 *效果图如下：*
 
-![图片](#)(https://dn-coding-net-production-pp.qbox.me/6ff6802f-8105-4a6b-b8a4-2abc380c1107.png)
+![图片](https://dn-coding-net-production-pp.qbox.me/6ff6802f-8105-4a6b-b8a4-2abc380c1107.png)
 
 ### 代码
 
@@ -189,7 +189,7 @@ puts markdown.to_html
 
 *效果图如下：*
 
-![在这里输入图片描述](#)(https://dn-coding-net-production-pp.qbox.me/64a6b611-e0b9-443d-b7a2-c134613b63f9.png)
+![在这里输入图片描述](https://dn-coding-net-production-pp.qbox.me/64a6b611-e0b9-443d-b7a2-c134613b63f9.png)
 
 强调
 
@@ -203,7 +203,7 @@ puts markdown.to_html
 
 *效果图如下：*
 
-![在这里输入图片描述](#)(https://dn-coding-net-production-pp.qbox.me/0e72e420-fd75-4dc8-8093-66a57e38cd68.png)
+![在这里输入图片描述](https://dn-coding-net-production-pp.qbox.me/0e72e420-fd75-4dc8-8093-66a57e38cd68.png)
 
 加粗：
 
@@ -213,7 +213,7 @@ puts markdown.to_html
 
 *效果图如下：*
 
-![在这里输入图片描述](#)(https://dn-coding-net-production-pp.qbox.me/372a6abf-f801-4a70-9f20-49f9e7db632d.png)
+![在这里输入图片描述](https://dn-coding-net-production-pp.qbox.me/372a6abf-f801-4a70-9f20-49f9e7db632d.png)
 
 ### 自动链接
 
@@ -221,7 +221,7 @@ puts markdown.to_html
 \[超强大的云开发平台Coding](http://coding.net)
 
 *效果图如下：*
-![在这里输入图片描述](#)(https://dn-coding-net-production-pp.qbox.me/3aeea7b8-a675-4491-adbb-b64b1145ff1a.png)
+![在这里输入图片描述](https://dn-coding-net-production-pp.qbox.me/3aeea7b8-a675-4491-adbb-b64b1145ff1a.png)
 
 或者也可以直接用\< \>，将网址或者邮箱地址放在中间，也能将地址直接转成链接：
 
@@ -229,7 +229,7 @@ puts markdown.to_html
 
 *效果图如下：*
 
-![在这里输入图片描述](#)(https://dn-coding-net-production-pp.qbox.me/c028625a-182b-4f76-8805-245c0e27e389.png)
+![在这里输入图片描述](https://dn-coding-net-production-pp.qbox.me/c028625a-182b-4f76-8805-245c0e27e389.png)
 
 ### 表格
 
@@ -249,7 +249,7 @@ Content Cell | Content Cell | Content Cell
 
 *效果图如下：*
 
-![在这里输入图片描述](#)(https://dn-coding-net-production-pp.qbox.me/9a77d37a-95d4-4ad6-ab09-0d41f766fe34.jpg)
+![在这里输入图片描述](https://dn-coding-net-production-pp.qbox.me/9a77d37a-95d4-4ad6-ab09-0d41f766fe34.jpg)
 
 或者也可以让表格两边内容对齐，中间内容居中，例如：
 
@@ -267,7 +267,7 @@ Left  | Center  | Right
 
 *效果图如下：*
 
-![在这里输入图片描述](#)(https://dn-coding-net-production-pp.qbox.me/0d4014c0-3f54-462a-8a99-4706c62b9e5e.jpg)
+![在这里输入图片描述](https://dn-coding-net-production-pp.qbox.me/0d4014c0-3f54-462a-8a99-4706c62b9e5e.jpg)
 
 ### 分割线
 
@@ -277,7 +277,7 @@ Left  | Center  | Right
 
 *效果图如下：*
 
-![在这里输入图片描述](#)(https://dn-coding-net-production-pp.qbox.me/aeb88b18-688b-41e9-a4a3-0f970ab3af3e.png)
+![在这里输入图片描述](https://dn-coding-net-production-pp.qbox.me/aeb88b18-688b-41e9-a4a3-0f970ab3af3e.png)
 
 ### 上下标
 
@@ -289,7 +289,7 @@ x^y^z=(1+rm e^x)^-2xy^w
 
 *效果图如下：*
 
-![在这里输入图片描述](#)(https://dn-coding-net-production-pp.qbox.me/ce4167be-058d-4cfc-9848-49ef2aebee94.png)
+![在这里输入图片描述](https://dn-coding-net-production-pp.qbox.me/ce4167be-058d-4cfc-9848-49ef2aebee94.png)
 
 ### 图片
 

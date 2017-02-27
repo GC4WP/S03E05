@@ -1,7 +1,7 @@
 ## 背景
 在 `S01-此开卷第一回.pdf` 分享中提及的 圣经和合本成书技巧;
 
-![bible-easy2merge.png（PNG 图像，594x584 像素）](http://openmindclub.qiniucdn.com/res/tapes/GC4/S03E05g56/bible-easy2merge.png?imageView2/2/w/360)
+![bible-easy2merge.png(PNG 图像,594x584 像素)](http://openmindclub.qiniucdn.com/res/tapes/GC4/S03E05g56/bible-easy2merge.png?imageView2/2/w/360)
 
 正是当前:
 
@@ -88,7 +88,7 @@ GC4 课程第一阶段提出的文字追求
 
 - [知识炼金术士行动指南 1.0 - 简书](http://www.jianshu.com/p/492c0e7f1f0d)
 - [中文和合本圣经翻译原则之研究_CNKI学问](http://xuewen.cnki.net/CMFD-2001000610.nh.html)
-    + [【连载】和合本圣经与中国（四）：艰难的翻译 - 基督时报—基督教资讯平台](http://www.christiantimes.cn/news/15206/%E3%80%90%E8%BF%9E%E8%BD%BD%E3%80%91%E5%92%8C%E5%90%88%E6%9C%AC%E5%9C%A3%E7%BB%8F%E4%B8%8E%E4%B8%AD%E5%9B%BD%EF%BC%88%E5%9B%9B%EF%BC%89%EF%BC%9A%E5%B4%9B%E8%B5%B7%E7%9A%84%E5%B8%8C%E6%9C%9B)
+    + [[连载]和合本圣经与中国(四):艰难的翻译 - 基督时报—基督教资讯平台](http://www.christiantimes.cn/news/15206/%E3%80%90%E8%BF%9E%E8%BD%BD%E3%80%91%E5%92%8C%E5%90%88%E6%9C%AC%E5%9C%A3%E7%BB%8F%E4%B8%8E%E4%B8%AD%E5%9B%BD%EF%BC%88%E5%9B%9B%EF%BC%89%EF%BC%9A%E5%B4%9B%E8%B5%B7%E7%9A%84%E5%B8%8C%E6%9C%9B)
     + [和合本_百度百科](http://baike.baidu.com/link?url=H5cUsS6gbe8bZXCxNicyU8uh1koiqg3VUXGj-wqDAAPtvRMdtg-EyN_U3ltAHiJxGpXxlqDGyTAkZPGnNqz-uq)
 - ...
 
